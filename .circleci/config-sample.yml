@@ -67,16 +67,24 @@ jobs:
 
   test-frontend:
     docker:
+      - image: circleci/node:13.8.0
       # Docker image here
     steps:
+      cd frontend
+      npm install
+      npm run test
       # Checkout code from git
       # Restore from cache
       # Your job code here
                 
   test-backend:
     docker:
+      - image: circleci/node:13.8.0
       # Docker image here
     steps:
+      cd backend
+      npm install
+      npm run test
       # Checkout code from git
       # Restore from cache
       # Your job code here
