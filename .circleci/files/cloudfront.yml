@@ -5,8 +5,6 @@ Parameters:
   WorkflowID:
     Description: Unique identifier.
     Type: String
-
-
 Resources:
   
   CloudFrontOriginAccessIdentity:
